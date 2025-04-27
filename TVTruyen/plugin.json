@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "name": "TVTruyen",
+    "author": "Long",
+    "version": 1,
+    "source": "https://www.tvtruyen.com",
+    "regexp": "https?://(www.)?tvtruyen.com/.*",
+    "description": "Đọc truyện trên TVTruyen",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "src/home.js",
+    "genre": "src/genre.js",
+    "detail": "src/detail.js",
+    "search": "src/search.js",
+    "toc": "src/toc.js",
+    "chap": "src/chap.js",
+    "catalog": "src/catalog.js",
+    "sort": "src/sort.js",
+    "related": "src/related.js"
+  }
+}
