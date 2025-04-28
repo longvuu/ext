@@ -11,14 +11,11 @@
     "type": "novel"
   },
   "script": {
-    "home": "src/home.js",
-    "genre": "src/genre.js",
-    "detail": "src/detail.js",
-    "search": "src/search.js",
-    "toc": "src/toc.js",
-    "chap": "src/chap.js",
-    "catalog": "src/catalog.js",
-    "sort": "src/sort.js",
-    "related": "src/related.js"
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
   }
 }

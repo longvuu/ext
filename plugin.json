@@ -5,6 +5,12 @@
   },
   "data": [
     {
+      "name": "TvTruyện",
+      "author": "vBook", 
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/bachngocsach/plugin.zip"
+
+    },
+    {
       "name": "Bạch Ngọc Sách",
       "author": "vBook",
       "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/bachngocsach/plugin.zip",
