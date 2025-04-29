@@ -5,7 +5,7 @@ function execute(url, page) {
     let response = fetch(url + "?page=" + page);
     if (response.ok) {
         let doc = response.html();
-        let nextPage = /page=(\d+)/.exec(doc.select(".next-page").first().attr("href"));
+        let nextPage = /page=(\d+)/.exec(doc.select('a[rel="next"]').attr("href"));
         if (nextPage) nextPage = nextPage[1];
         else nextPage = "";
 
