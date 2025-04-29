@@ -5,22 +5,24 @@ function execute(url, page) {
     let response = fetch(url + "?page=" + page);
     if (response.ok) {
         let doc = response.html();
-
         let nextPage = /page=(\d+)/.exec(doc.select(".next-page").first().attr("href"));
         if (nextPage) nextPage = nextPage[1];
         else nextPage = "";
 
         let books = [];
-        doc.select(".basis-full").first().select(".novel-item").forEach(e => {
-            let type = e.select("a[href^=danh-muc]").text();
-            if (type) {
-                type = "[" + type + "] ";
-            }
+        doc.select(".category-list-container .info-mobile-card").forEach(e => {
+            let name = e.select(".name > a").text();
+            let link = e.select(".name > a").attr("href");
+            let imgSrc = e.select(".info-image img").attr("src") || "";
+            let cover = imgSrc.startsWith("http") ? imgSrc : BASE_URL + imgSrc;
+            let chapterInfo = e.select(".chapter-text").text();
+            let timeInfo = e.select(".category-list-info-timeago").text();
+
             books.push({
-                name: type + e.select("h3").text(),
-                link: e.select("a").first().attr("href"),
-                cover: e.select("img").first().attr("src"),
-                description: e.select(".author ").text() + " - " + e.select(".story-info").text(),
+                name: name,
+                link: link,
+                cover: cover,
+                description: chapterInfo + " - " + timeInfo,
                 host: BASE_URL,
             });
         });
