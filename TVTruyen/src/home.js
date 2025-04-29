@@ -1,34 +1,9 @@
-load('config.js');
-
 function execute() {
     return Response.success([
         {
-            title: "Thể Loại",
-            script: "genre.js"
+            title: "Truyện Mới", input: "https://www.tvtruyen.com/the-loai/tat-ca/truyen-moi", script:"source.js",
+            title: "Truyện Hot", input: "https://www.tvtruyen.com/the-loai/tat-ca/truyen-hot", script:"source.js",
+            title: 'Truyên Full', input: "https://www.tvtruyen.com/the-loai/tat-ca/truyen-full", script:"source.js",
         },
-        {
-            title: "Danh Mục",
-            script: "catalog.js"
-        },
-        {
-            title: "Truyện Mới Cập Nhật",
-            input: BASE_URL + "/truyen-moi",
-            script: "gen.js"
-        },
-        {
-            title: "Truyện Hot",
-            input: BASE_URL + "/truyen-hot",
-            script: "gen.js"
-        },
-        {
-            title: "Truyện Full",
-            input: BASE_URL + "/truyen-full",
-            script: "gen.js"
-        },
-        {
-            title: "Tìm Kiếm",
-            input: BASE_URL,
-            script: "search.js"
-        }
     ]);
 }

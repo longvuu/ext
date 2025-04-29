@@ -1,20 +1,17 @@
 {
   "metadata": {
     "name": "TVTruyen",
-    "author": "Long",
+    "author": "longvuu",
     "version": 1,
-    "source": "https://www.tvtruyen.com",
-    "regexp": "https?://(www.)?tvtruyen.com/.*",
-    "description": "Đọc truyện trên TVTruyen",
+    "source": "https://www.tvtruyen.com/",
+    "regexp": "^https?://(www\\.)?tvtruyen\\.com/",
+    "description": "TVTruyen - Truyện tranh, truyện chữ miễn phí",
     "locale": "vi_VN",
-    "language": "javascript",
     "type": "novel"
   },
   "script": {
     "home": "home.js",
-    "genre": "genre.js",
     "detail": "detail.js",
-    "search": "search.js",
     "toc": "toc.js",
     "chap": "chap.js"
   }
