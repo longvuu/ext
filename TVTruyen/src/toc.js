@@ -6,12 +6,15 @@ function execute(url, page) {
 
     let response = fetch(url + "?page=" + page + "#list-chapter");
     if (response.ok) {
+        let doc = response.html();
         let list = [];
-        doc.select(".list-chapter li a").forEach(e => list.push({
-            name: e.select(".chapter-text-all").text(),
-            url: e.attr("href"),
-            host: BASE_URL
-        }));
+        doc.select(".list-chapter li a").forEach(e => {
+            list.push({
+                name: e.select(".chapter-text-all").text(),
+                url: e.attr("href"),
+                host: BASE_URL
+            });
+        });
 
         // Lấy trang tiếp theo nếu có
         let nextPage = "";
