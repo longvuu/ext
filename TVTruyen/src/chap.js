@@ -3,8 +3,5 @@ function execute(url) {
     // Chuyển đổi sang CDN
     let cdnUrl = url.replace(/^https?:\/\/(www\.)?tvtruyen\.com\//, "https://cdn.cscldsck.com/chapters/");
     let response = fetch(cdnUrl);
-    if (response.ok) {
-        return Response.success(response.text());
-    }
-    return null;
+    return Response.success(response.text());
 }
