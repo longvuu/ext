@@ -1,31 +1,31 @@
 load('config.js');
 
 function execute(url, page) {
-    if (!page) page = '1';
-    //url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
+    let allChapters = [];
+    let currentPage = page ? parseInt(page) : 1;
+    let hasNext = true;
 
-    let response = fetch(url + "?page=" + page + "#list-chapter");
-    if (response.ok) {
+    while (hasNext) {
+        let response = fetch(url + "?page=" + currentPage + "#list-chapter");
+        if (!response.ok) break;
+
         let doc = response.html();
-        let list = [];
         doc.select(".list-chapter li a").forEach(e => {
-            list.push({
+            allChapters.push({
                 name: e.select(".chapter-text-all").text(),
                 url: e.attr("href"),
                 host: BASE_URL
             });
         });
 
-        // Lấy trang tiếp theo nếu có
-        let nextPage = "";
+        // Kiểm tra trang tiếp theo
         let nextLink = doc.select('a[rel="next"]');
         if (nextLink && nextLink.size() > 0) {
-            let href = nextLink.attr("href");
-            let match = /page=(\d+)/.exec(href);
-            if (match) nextPage = match[1];
+            currentPage++;
+        } else {
+            hasNext = false;
         }
-
-        return Response.success(list, nextPage);
     }
-    return null;
+
+    return Response.success(allChapters);
 }
