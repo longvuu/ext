@@ -1,13 +1,17 @@
 load('config.js');
 
 function execute(url, page) {
-    if (!page) page = '1';
-    let response = fetch(url + "?page=" + page + "#list-chapter");
-    if (response.ok) {
+    let allChapters = [];
+    let currentPage = page ? parseInt(page) : 1;
+    let hasNext = true;
+
+    while (hasNext) {
+        let response = fetch(url + "?page=" + currentPage + "#list-chapter");
+        if (!response.ok) break;
+
         let doc = response.html();
-        let chapters = [];
         doc.select(".list-chapter li a").forEach(e => {
-            chapters.push({
+            allChapters.push({
                 name: e.select(".chapter-text-all").text(),
                 url: e.attr("href"),
                 host: BASE_URL
@@ -15,15 +19,13 @@ function execute(url, page) {
         });
 
         // Kiểm tra trang tiếp theo
-        let nextPage = "";
         let nextLink = doc.select('a[rel="next"]');
         if (nextLink && nextLink.size() > 0) {
-            let href = nextLink.attr("href");
-            let match = /page=(\d+)/.exec(href);
-            if (match) nextPage = match[1];
+            currentPage++;
+        } else {
+            hasNext = false;
         }
-
-        return Response.success(chapters, nextPage);
     }
-    return null;
+
+    return Response.success(allChapters);
 }
