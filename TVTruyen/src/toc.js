@@ -2,7 +2,7 @@ load('config.js');
 
 function execute(url, page) {
     if (!page) page = '1';
-    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
+    //url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
 
     let response = fetch(url + "?page=" + page + "#list-chapter");
     if (response.ok) {
