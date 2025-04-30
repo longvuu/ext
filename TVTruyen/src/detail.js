@@ -4,25 +4,41 @@ function execute(url) {
     let response = fetch(url);
     if (response.ok) {
         let doc = response.html();
-        let info = doc.select(".info-story");
+
+        // Lấy tên truyện
+        let name = doc.select("h3.title#comic_name").text();
+
+        // Lấy ảnh bìa
+        let cover = doc.select(".book img").attr("src");
+
+        // Lấy tác giả
+        let author = doc.select(".author a.item-value").text();
+
+        // Lấy mô tả
+        let description = doc.select("section.limit-desc").text();
+
+        // Lấy thể loại
         let genres = [];
-        info.select("a[href^=the-loai]").forEach(e => {
+        doc.select(".genres a.item-value").forEach(e => {
             genres.push({
-                title: e.text(),
-                input: BASE_URL + "/" + e.attr("href"),
+                title: e.text().trim(),
+                input: e.attr("href"),
                 script: "source.js"
             });
         });
+
+        // Lấy trạng thái
+        let ongoing = doc.select(".info .item-value.text-success").text().indexOf("Full") === -1;
+
         return Response.success({
-            name: info.select("h1").text(),
-            cover: doc.select(".image-story img").attr("src"),
-            author: info.select("a[href^=tac-gia]").text(),
-            description: doc.select("#tab-info-1 .s-content").html(),
+            name: name,
+            cover: cover,
+            author: author,
+            description: description,
             genres: genres,
-            detail: info.select(".story-info").html(),
-            ongoing: info.text().indexOf("Đã hoàn thành") === -1,
+            ongoing: ongoing,
             host: BASE_URL,
         });
     }
-    return Response.success(JSON.parse(json));
+    return null;
 }
