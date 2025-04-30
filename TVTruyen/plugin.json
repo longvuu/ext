@@ -2,7 +2,7 @@
   "metadata": {
     "name": "TVTruyen",
     "author": "longvuu",
-    "version": 22,
+    "version": 23,
     "source": "https://www.tvtruyen.com/",
     "regexp": "^https?://(www\\.)?tvtruyen\\.com/",
     "description": "TVTruyen - Truyện tranh, truyện chữ miễn phí",
