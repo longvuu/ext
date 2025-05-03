@@ -2,7 +2,7 @@
     "metadata": {
       "name": "AkayTruyen",
       "author": "longvuu",
-      "version": 11,
+      "version": 12,
       "source": "https://akaytruyen.com/",
       "regexp": "^https?://(www\\.)?akaytruyen\\.com/",
       "description": "Akaytruyen.com là web đọc truyện chính chủ duy nhất của tác giả AkayHau.",
