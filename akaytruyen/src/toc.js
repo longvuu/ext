@@ -5,7 +5,7 @@ function execute(url) {
     let maxPage = 1;
     url = url.replace(/\?page=\d+/, '');
     if (url.indexOf("/truyen/con-duong-ba-chu") !== -1) {
-        maxPage = 100;
+        maxPage = 65;
     }
     for (let currentPage = 1; currentPage <= maxPage; currentPage++) {
         let pageUrl = url + "?page=" + currentPage;
@@ -13,9 +13,9 @@ function execute(url) {
         if (!pageResponse.ok) break;
         let pageDoc = pageResponse.html();
         const seen = new Set();
-        pageDoc.select('.chapter-list a').forEach(e => {
-            let name = e.select('.chapter-title').text().trim();
-            if (!name) name = e.text().trim();
+        // Lấy nhanh tất cả chương từ selector tối ưu
+        pageDoc.select('.story-detail__list-chapter--list ul.chapter-list a').forEach(e => {
+            let name = e.text().trim();
             if (!seen.has(name)) {
                 seen.add(name);
                 allChapters.push({
