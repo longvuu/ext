@@ -29,14 +29,18 @@ function execute(url) {
         let pageResponse = fetch(pageUrl);
         if (!pageResponse.ok) break;
         let pageDoc = pageResponse.html();
+        const seen = new Set();
         pageDoc.select('.chapter-list a').forEach(e => {
             let name = e.select('.chapter-title').text().trim();
             if (!name) name = e.text().trim();
-            allChapters.push({
-                name: name,
-                url: e.attr('href'),
-                host: BASE_URL
-            });
+            if (!seen.has(name)) {
+                seen.add(name);
+                allChapters.push({
+                    name: name,
+                    url: e.attr('href'),
+                    host: BASE_URL
+                });
+            }
         });
     }
 
