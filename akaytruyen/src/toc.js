@@ -1,9 +1,10 @@
 load('config.js');
 
 function execute(url, page) {
-    let allChapters = [];
+    let allChapters = {};  // Use object instead of array to track unique URLs
     let currentPage = page ? parseInt(page) : 1;
     let hasNext = true;
+    let result = [];
 
     // Đảm bảo url luôn có dạng https://akaytruyen.com/truyen/xxx (không có ?page)
     url = url.replace(/\?page=\d+/, '');
@@ -31,20 +32,25 @@ function execute(url, page) {
         if (!response.ok) break;
 
         let doc = response.html();
-        // Lấy danh sách chương
+        // Lấy danh sách chương từ cả mobile và desktop view
+        // Chỉ xử lý một lần và tránh trùng lặp bằng cách dùng URL làm key
         doc.select('.story-detail__list-chapter--list .chapter-list li a').forEach(e => {
-            let name = e.select('.chapter-title').text().trim();
-            if (!name) name = e.text().trim();
-            allChapters.push({
-                name: name,
-                url: e.attr('href'),
-                host: BASE_URL
-            });
+            let chapterUrl = e.attr('href');
+            if (!allChapters[chapterUrl]) {
+                let name = e.select('.chapter-title').text().trim();
+                if (!name) name = e.text().trim();
+                
+                allChapters[chapterUrl] = {
+                    name: name,
+                    url: chapterUrl,
+                    host: BASE_URL
+                };
+            }
         });
 
         // Kiểm tra trang tiếp theo (chỉ lấy mũi tên sang phải >>)
         let nextPage = null;
-        let nextArrow = doc.select('li.pagination__arrow.pagination__item a[data-url]');
+        let nextArrow = doc.select('li.pagination__arrow.pagination__item a[data-url]:last-child');
         if (nextArrow && nextArrow.size() > 0) {
             let nextUrl = nextArrow.attr('data-url');
             let match = nextUrl.match(/page=(\d+)/);
@@ -52,6 +58,7 @@ function execute(url, page) {
                 nextPage = parseInt(match[1]);
             }
         }
+        
         if (nextPage) {
             currentPage = nextPage;
         } else {
@@ -59,5 +66,10 @@ function execute(url, page) {
         }
     }
 
-    return Response.success(allChapters);
+    // Chuyển object thành array để trả về
+    for (let key in allChapters) {
+        result.push(allChapters[key]);
+    }
+
+    return Response.success(result);
 }
