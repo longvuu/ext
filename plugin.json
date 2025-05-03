@@ -14,6 +14,17 @@
       "description": "Đọc truyện trên TVTruyen",
       "type": "novel",
       "locale": "vi_VN"
+    },
+    {
+      "name": "akaytruyen",
+      "author": "Long",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/akaytruyen/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/akaytruyen/icon.png",
+      "version":1,
+      "source": "https://akaytruyen.com/",
+      "description": "Akaytruyen.com là web đọc truyện chính chủ duy nhất của tác giả AkayHau.",
+      "locale": "vi_VN",
+      "type": "novel"
     }
   ]
 }
