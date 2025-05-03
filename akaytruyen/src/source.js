@@ -27,7 +27,7 @@ function execute(url, page) {
             });
         });
 
-        return Response.success(books, nextPage);
+        return Response.success(books);
     }
     return null;
 }
