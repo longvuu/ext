@@ -27,6 +27,9 @@ function execute(url) {
             }
         });
     }
+    
+    // Đảo ngược thứ tự chương để có thứ tự đúng (từ chương cũ đến chương mới)
+    allChapters.reverse();
 
     return Response.success(allChapters);
 }
