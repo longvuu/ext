@@ -2,8 +2,11 @@ load("config.js");
 
 function execute(url, page) {
     if (!page) page = '1';
+    
+    // Xử lý URL dựa trên định dạng của trang web
     let response;
     if (url.includes("/shuku/")) {
+        // Định dạng URL cho trang sách
         let baseUrl = url.replace(/\/\d+\.html$/, "");
         if (baseUrl.endsWith("/shuku/")) {
             response = fetch(baseUrl + "0_0_0_" + page + ".html");
@@ -20,49 +23,17 @@ function execute(url, page) {
     
     if (response.ok) {
         let doc = response.html();
-        let nextPage = "";
         
-        // Cải tiến phần xử lý phân trang
-        let paginationLinks = doc.select('div.pagelist a');
-        if (paginationLinks && paginationLinks.size() > 0) {
-            // Kiểm tra URL hiện tại để xác định trang
-            let currentUrl = response.url;
-            
-            // Tìm link "下一页" (Trang tiếp theo)
-            let nextPageLink = null;
-            for (let i = 0; i < paginationLinks.size(); i++) {
-                let link = paginationLinks.get(i);
-                let text = link.text();
-                if (text === "下一页") {
-                    nextPageLink = link;
-                    break;
-                }
+        // Tìm thẻ <a> có text là "下一页" trong pagelist
+        let next = "";
+        doc.select("div.pagelist a").forEach(a => {
+            if (a.text().trim() === "下一页") {
+                let href = a.attr("href");
+                let m = href.match(/_(\d+)\.html$/);
+                next = m ? m[1] : "";
             }
-            
-            // Nếu không tìm thấy bằng text, sử dụng logic vị trí cũ
-            if (!nextPageLink) {
-                let isFirstPage = currentUrl.includes("/0_0_0_1.html") || 
-                                currentUrl.endsWith("/shuku/") || 
-                                page === '1';
-                
-                let targetLinkIndex = isFirstPage ? 0 : 2;
-                if (targetLinkIndex < paginationLinks.size()) {
-                    nextPageLink = paginationLinks.get(targetLinkIndex);
-                }
-            }
-            
-            // Trích xuất số trang từ URL của link tiếp theo
-            if (nextPageLink) {
-                let href = nextPageLink.attr("href");
-                // Trích xuất số trang từ URL cả với định dạng .html hoặc tham số page
-                let match = href.match(/\/(\d+)\.html$/) || href.match(/[?&]page=(\d+)/);
-                if (match && match[1]) {
-                    nextPage = match[1];
-                    console.log("Tìm thấy trang tiếp theo: " + nextPage + " từ URL: " + href);
-                }
-            }
-        }
-        
+        });
+
         let books = [];
         doc.select("ul.list li").forEach(e => {
             try {
@@ -80,13 +51,15 @@ function execute(url, page) {
                 }
                 let cover = imgSrc.startsWith("http") ? imgSrc : BASE_URL + imgSrc;
                 
+                // Thông tin tác giả
                 let author = e.select("p.data > a.layui-btn-xs.layui-bg-cyan").text();
                 
+                // Thông tin thể loại và trạng thái
                 let genreSpans = e.select("p.data > span.layui-btn-xs.layui-btn-radius");
                 let genre = genreSpans.size() > 0 ? genreSpans.first().text() : "";
-                
                 let status = genreSpans.size() > 1 ? genreSpans.last().text() : "";
                 
+                // Thông tin giới thiệu và chương mới
                 let intro = e.select("p.intro").text();
                 let latestChap = e.select("p.data:last-child > a").text();
 
@@ -106,7 +79,7 @@ function execute(url, page) {
             }
         });
 
-        return Response.success(books, nextPage);
+        return Response.success(books, next);
     }
     return null;
 }
