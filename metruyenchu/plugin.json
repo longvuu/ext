@@ -1,0 +1,18 @@
+{
+    "metadata": {
+      "name": "Mê Truyện Chữ",
+      "author": "longvuu",
+      "version": 20,
+      "source": "https://metruyenchu.net/",
+      "regexp": "^https?://(www\\.)?metruyenchu\\.net/",
+      "description": "Mê Truyện Chữ là trang web đọc truyện chữ online.",
+      "locale": "vi_VN",
+      "type": "novel"
+    },
+    "script": {
+      "home": "home.js",
+      "detail": "detail.js",
+      "toc": "toc.js",
+      "chap": "chap.js"
+    }
+  }
