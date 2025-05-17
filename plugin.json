@@ -36,6 +36,17 @@
       "description": "Akaytruyen.com là web đọc truyện chính chủ duy nhất của tác giả AkayHau.",
       "locale": "vi_VN",
       "type": "novel"
+    },
+    {
+      "name": "metruyenchu",
+      "author": "Long",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/metruyenchu/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/metruyenchu/icon.png",
+      "version": 1,
+      "source": "https://metruyenchu.com",
+      "description": "Đọc truyện trên Mê Truyện Chữ",
+      "locale": "vi_VN",
+      "type": "novel"
     }
   ]
 }
