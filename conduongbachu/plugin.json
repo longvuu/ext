@@ -2,7 +2,7 @@
     "metadata": {
       "name": "Con Đường Bá Chủ",
       "author": "longvuu",
-      "version": 19,
+      "version": 20,
       "source": "https://akaytruyen.com/",
       "regexp": "^https?://(www\\.)?akaytruyen\\.com/",
       "description": "Akaytruyen.com là web đọc truyện chính chủ duy nhất của tác giả AkayHau.",

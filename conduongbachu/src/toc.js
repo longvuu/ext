@@ -5,7 +5,7 @@ function execute(url) {
     let maxPage = 1;
     url = url.replace(/\?page=\d+/, '');
     if (url.indexOf("/truyen/con-duong-ba-chu") !== -1) {
-        maxPage = 65;
+        maxPage = 1;
     }
     for (let currentPage = 1; currentPage <= maxPage; currentPage++) {
         let pageUrl = url + "?page=" + currentPage;
