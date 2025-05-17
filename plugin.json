@@ -25,6 +25,17 @@
       "description": "Akaytruyen.com là web đọc truyện chính chủ duy nhất của tác giả AkayHau.",
       "locale": "vi_VN",
       "type": "novel"
+    },
+    {
+      "name": "conduongbachu",
+      "author": "Long",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/conduongbachu/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/conduongbachu/icon.png",
+      "version": 1,
+      "source": "https://akaytruyen.com/",
+      "description": "Akaytruyen.com là web đọc truyện chính chủ duy nhất của tác giả AkayHau.",
+      "locale": "vi_VN",
+      "type": "novel"
     }
   ]
 }
