@@ -47,6 +47,17 @@
       "description": "Đọc truyện trên Mê Truyện Chữ",
       "locale": "vi_VN",
       "type": "novel"
+    },
+    {
+      "name": "doctruyen14",
+      "author": "Long",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/doctruyen14/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/doctruyen14/icon.png",
+      "version": 1,
+      "source": "https://doctruyen14.vip/",
+      "description": "Đọc truyện trên doctruyen14.vip",
+      "locale": "vi_VN",
+      "type": "novel"
     }
   ]
 }
