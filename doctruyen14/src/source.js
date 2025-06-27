@@ -14,17 +14,29 @@ function execute(url, page) {
         let doc = response.html();
         let nextPage = "";
         
-        // Tìm link trang tiếp theo
-        let nextLinks = doc.select('.wp-pagenavi a');
-        nextLinks.forEach(link => {
-            if (link.text().includes("»") || link.attr("class").includes("next")) {
-                let href = link.attr("href");
-                let match = /page\/(\d+)\//.exec(href);
+        // Tìm nextPage đơn giản - tăng page hiện tại lên 1
+        let currentPageNum = parseInt(page);
+        let totalPages = 0;
+        
+        // Tìm tổng số trang từ pagination
+        let pageLinks = doc.select('.wp-pagenavi a');
+        pageLinks.forEach(link => {
+            let href = link.attr("href");
+            if (href) {
+                let match = /\/page\/(\d+)\//.exec(href);
                 if (match) {
-                    nextPage = match[1];
+                    let pageNum = parseInt(match[1]);
+                    if (pageNum > totalPages) {
+                        totalPages = pageNum;
+                    }
                 }
             }
         });
+        
+        // Nếu trang hiện tại nhỏ hơn tổng số trang thì có next page
+        if (currentPageNum < totalPages) {
+            nextPage = (currentPageNum + 1).toString();
+        }
 
         let books = [];
         
