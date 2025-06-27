@@ -14,15 +14,16 @@ function execute(url, page) {
         let doc = response.html();
         let nextPage = "";
         
-        // Tìm nextPage đơn giản - tăng page hiện tại lên 1
+        // Tìm nextPage từ pagination
         let currentPageNum = parseInt(page);
         let totalPages = 0;
         
-        // Tìm tổng số trang từ pagination
+        // Tìm tổng số trang từ tất cả các link trong pagination
         let pageLinks = doc.select('.wp-pagenavi a');
         pageLinks.forEach(link => {
             let href = link.attr("href");
             if (href) {
+                // Thử tìm page number từ URL
                 let match = /\/page\/(\d+)\//.exec(href);
                 if (match) {
                     let pageNum = parseInt(match[1]);
@@ -31,7 +32,25 @@ function execute(url, page) {
                     }
                 }
             }
+            
+            // Cũng thử lấy từ text của link (cho các số trang)
+            let linkText = link.text().trim();
+            if (/^\d+$/.test(linkText)) {
+                let pageNum = parseInt(linkText);
+                if (pageNum > totalPages) {
+                    totalPages = pageNum;
+                }
+            }
         });
+        
+        // Nếu không tìm được totalPages, thử tìm nextpostslink
+        if (totalPages === 0) {
+            let nextLink = doc.select('.wp-pagenavi a.nextpostslink');
+            if (nextLink.size() > 0) {
+                // Có next link nghĩa là có ít nhất trang tiếp theo
+                totalPages = currentPageNum + 1;
+            }
+        }
         
         // Nếu trang hiện tại nhỏ hơn tổng số trang thì có next page
         if (currentPageNum < totalPages) {
