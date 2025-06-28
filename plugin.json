@@ -58,6 +58,17 @@
       "description": "Đọc truyện trên doctruyen14.vip",
       "locale": "vi_VN",
       "type": "novel"
+    },
+    {
+      "name": "banlong",
+      "author": "Long",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/banlong/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/banlong/icon.png",
+      "version": 1,
+      "source": "https://banlong.us/",
+      "description": "Đọc truyện trên banlong.us",
+      "locale": "vi_VN",
+      "type": "novel"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "Bàn Long",
+    "author": "longvuu",
+    "version": 1,
+    "source": "https://banlong.vip",
+    "regexp": "(www.)?banlong.vip/truyen/[0-9a-z-]+/?",
+    "description": "Đọc truyện trên banlong.vip",
+    "locale": "vi-VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
