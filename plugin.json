@@ -64,9 +64,9 @@
       "author": "Long",
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/banlong/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/banlong/icon.png",
-      "version": 1,
-      "source": "https://banlong.us/",
-      "description": "Đọc truyện trên banlong.us",
+      "version": 2,
+      "source": "https://banlong.vip/",
+      "description": "Đọc truyện trên banlong.vip",
       "locale": "vi_VN",
       "type": "novel"
     }

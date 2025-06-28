@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Bàn Long",
     "author": "longvuu",
-    "version": 1,
+    "version": 2,
     "source": "https://banlong.vip",
     "regexp": "(www.)?banlong.vip/truyen/[0-9a-z-]+/?",
     "description": "Đọc truyện trên banlong.vip",
