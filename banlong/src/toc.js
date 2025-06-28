@@ -1,20 +1,19 @@
 load("config.js");
 
 function execute(url) {
-    let response = fetch(BASE_URL.replace("https://", "https://api.") + "/" + url);
+    let response = fetch(url);
     if (response.ok) {
-        let json = response.json();
-        let chapters = [];
-        json.data.forEach(e => {
-            chapters.push({
-                name: e.name,
-                url: e.url,
-                pay: e.is_vip,
-                host: BASE_URL,
-            });
-        });
-        return Response.success(chapters);
-    }
-    return null;
+        let doc = response.html();
+        let storyId = doc.select("input[name=story]").first().attr("value");
+        let json = fetch(BASE_URL.replace("https://", "https://api.") + "/v1/chapter_list/" + storyId + "?page=1&new=0").json();
+        let lastPage = json.total_page;
+        let pages = [];
+        for (let i = 1; i <= lastPage; i++) {
+            pages.push("v1/chapter_list/" + storyId + "?page=" + i + "&new=0");
+        }
 
+        return Response.success(pages);
+    }
+
+    return null;
 }
