@@ -69,6 +69,17 @@
       "description": "Đọc truyện trên banlong.vip",
       "locale": "vi_VN",
       "type": "novel"
+    },
+    {
+      "name": "69shuba",
+      "author": "longvuu",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/69shu/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/69shu/icon.png",
+      "version": 1, 
+      "source": "https://www.69shuba.com/",
+      "description": "https://www.69shuba.com/ trang truyện tiếng Trung",
+      "locale": "zh_CN",
+      "type": "novel"
     }
   ]
 }
