@@ -2,7 +2,7 @@
     "metadata": {
       "name": "69shuba",
       "author": "longvuu",
-      "version": 1,
+      "version": 2,
       "source": "https://www.69shuba.com/",
       "regexp": "^https?://(www\\.)?69shuba\\.com/",
       "description": "https://www.69shuba.com/ trang truyện tiếng Trung",
@@ -13,6 +13,7 @@
       "home": "home.js",
       "detail": "detail.js",
       "toc": "toc.js",
-      "chap": "chap.js"
+      "chap": "chap.js",
+      "genre":"genre.js"
     }
   }
