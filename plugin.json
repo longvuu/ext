@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "author": "long",
+    "author": "longvuu",
     "description": ""
   },
   "data": [
     {
       "name": "TVTruyen",
-      "author": "Long", 
+      "author": "longvuu", 
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/TVTruyen/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/TVTruyen/icon.png",
       "version": 1,
@@ -17,7 +17,7 @@
     },
     {
       "name": "akaytruyen",
-      "author": "Long",
+      "author": "longvuu",
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/akaytruyen/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/akaytruyen/icon.png",
       "version":1,
@@ -28,7 +28,7 @@
     },
     {
       "name": "conduongbachu",
-      "author": "Long",
+      "author": "longvuu",
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/conduongbachu/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/conduongbachu/icon.png",
       "version": 2,
@@ -39,7 +39,7 @@
     },
     {
       "name": "metruyenchu",
-      "author": "Long",
+      "author": "longvuu",
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/metruyenchu/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/metruyenchu/icon.png",
       "version": 1,
@@ -50,7 +50,7 @@
     },
     {
       "name": "doctruyen14",
-      "author": "Long",
+      "author": "longvuu",
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/doctruyen14/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/doctruyen14/icon.png",
       "version": 2,
@@ -61,7 +61,7 @@
     },
     {
       "name": "banlong",
-      "author": "Long",
+      "author": "longvuu",
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/banlong/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/banlong/icon.png",
       "version": 2,
