@@ -1,7 +1,5 @@
-# Intellij
-.idea/*
-*.iml
-*test.json
-data.json
-history.bak
-.DS_Store
+mahoa
+# Ẩn tất cả thư mục src và nội dung bên trong
+*/src/
+**/src/
+src/
