@@ -7,7 +7,7 @@ function execute(url) {
         return GBK.encode(s);
     }
 
-    // Chuẩn hoá URL
+    // Chuẩn hóa URL
     url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
     url = url.replace("/c/", "/b/");
     url = url.replace("/txt/", "/book/");
