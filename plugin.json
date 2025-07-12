@@ -79,7 +79,18 @@
       "source": "https://www.69shuba.com/",
       "description": "https://www.69shuba.com/ trang truyện tiếng Trung",
       "locale": "zh_CN",
-      "type": "novel"
+      "type": "chinese_novel"
+    },
+        {
+      "name": "AliceSW",
+      "author": "longvuu",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/alicesw/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/alicesw/icon.png",
+      "version": 1,
+      "source": "https://www.alicesw.com/",
+      "description": "trang truyện seggg.",
+      "locale": "zh_CN",
+      "type": "chinese_novel"
     }
   ]
 }
