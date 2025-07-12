@@ -7,7 +7,7 @@
       "regexp": "^https?://(www\\.)?69shuba\\.com/",
       "description": "https://www.69shuba.com/ trang truyện tiếng Trung",
       "locale": "zh_CN",
-      "type": "novel"
+      "type": "chinese_novel"
     },
     "script": {
       "home": "home.js",
