@@ -98,8 +98,8 @@
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/lxmanga/plugin.zip",
       "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/lxmanga/icon.png",
       "version": 1,
-      "source": "https://lxmanga.com/",
-      "description": "lxmanga.com là trang truyện segg",
+      "source": "https://lxmanga.blog/",
+      "description": "lxmanga.blog là trang truyện manga/comic",
       "locale": "vi_VN",
       "type": "comic"
     }
