@@ -81,7 +81,7 @@
       "locale": "zh_CN",
       "type": "chinese_novel"
     },
-        {
+    {
       "name": "AliceSW",
       "author": "longvuu",
       "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/alicesw/plugin.zip",
