@@ -1,18 +1,16 @@
 {
-    "metadata": {
-      "name": "LXManga",
-      "author": "longvuu",
-      "version": 3,
-      "source": "https://lxmanga.blog/",
-      "regexp": "^https?://(www\\.)?lxmanga\\.blog/",
-      "description": "LXManga là trang web đọc truyện online.",
-      "locale": "vi_VN",
-      "type": "comic"
-    },
-    "script": {
-      "home": "home.js",
-      "detail": "detail.js",
-      "toc": "toc.js",
-      "chap": "chap.js"
-    }
+  "name": "lxmanga",
+  "author": "longvuu",
+  "version": 4,
+  "source": "https://lxmanga.blog/",
+  "regexp": "^https?:\\/\\/(?:www\\.)?lxmanga\\.blog/truyen/[A-Za-z0-9-]+(?:/chapter-\\d+)?/?$",
+  "description": "LXManga là trang web đọc truyện online.",
+  "locale": "vi_VN",
+  "type": "comic",
+  "scripts": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
   }
+}
