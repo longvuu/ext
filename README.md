@@ -17,6 +17,6 @@ https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
 * Sau đó nhập link:
 
 ```
-https://raw.githubusercontent.com/longvuu/vbook-extensions/refs/heads/master/plugin.json
+https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
 ```
 ![alt](huongdan/adds.jpg)
