@@ -1,0 +1,18 @@
+{
+    "metadata": {
+      "name": "Genesis Studio",
+      "author": "longvuu",
+      "version": 1,
+      "source": "https://genesistudio.com/",
+      "regexp": "^https?://(www\\.)?genesistudio\\.com(/.*)?$",
+      "description": "Genesis Studio - trang web đọc truyện chữ online.",
+      "locale": "en_EN",
+      "type": "novel"
+    },
+    "script": {
+      "home": "home.js",
+      "detail": "detail.js",
+      "toc": "toc.js",
+      "chap": "chap.js"
+    }
+}
