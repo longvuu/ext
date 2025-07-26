@@ -102,6 +102,17 @@
       "description": "lxmanga.blog là trang truyện manga/comic",
       "locale": "vi_VN",
       "type": "comic"
+    },
+    {
+      "name": "HentaiVN",
+      "author": "longvuu",
+      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/hentaivn/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/hentaivn/icon.png",
+      "version": 1,
+      "source": "https://hentaihvn.tv",
+      "description": "Đọc truyện trên trang HentaiVN",
+      "locale": "vi_VN",
+      "type": "comic"
     }
   ]
 }

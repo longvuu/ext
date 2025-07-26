@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "HentaiVN",
+    "author": "longvuu",
+    "version": 1,
+    "source": "https://www.hentaivnx.com",
+    "regexp": "(www.)?hentaivnx.com/\\d+-[^/]+.html$",
+    "description": "Đọc truyện trên trang HentaiVN",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
