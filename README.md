@@ -20,8 +20,6 @@ Tải app tại : [Vbook App Download](https://bit.ly/vbookapp)
 | 9 | lxmanga | Comic | Tiếng Việt | [lxmanga.blog](https://lxmanga.blog/) | v1 |
 | 10 | HentaiVN | Comic | Tiếng Việt | [hentaihvn.tv](https://hentaihvn.tv) | v1 |
 
-**Tổng cộng:** 10 extensions
-
 ## Link extension
 
 https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
