@@ -30,3 +30,6 @@ https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
 | --------------------------------------------- | --------------------------------------- |
 | <img src='huongdan/extension.jpg' width='500'>| <img src='huongdan/add.jpg' width='500'>|
 * Sau đó nhập link:
+```
+https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
+```
