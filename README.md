@@ -20,10 +20,6 @@ Tải app tại : [Vbook App Download](https://bit.ly/vbookapp)
 | 10 | HentaiVN | Comic | Tiếng Việt | [hentaihvn.tv](https://hentaihvn.tv) | v1 |
 | 11 | truyencom | Novel | Tiếng Việt | [truyencom.com](https://truyencom.com/) | v1 |
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5d93effab61e1295277cbad83fc88a45e1003be2
 ## Link extension
 
 https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
