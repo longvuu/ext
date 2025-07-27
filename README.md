@@ -17,10 +17,9 @@ Tải app tại : [Vbook App Download](https://bit.ly/vbookapp)
 | 6 | banlong | Novel | Tiếng Việt | [banlong.vip](https://banlong.vip/) | v2 |
 | 7 | 69shuba | Novel | Tiếng Trung | [69shuba.com](https://www.69shuba.com/) | v1 |
 | 8 | AliceSW | Novel | Tiếng Trung | [alicesw.com](https://www.alicesw.com/) | v1 |
-| 9 | lxmanga | Comic | Tiếng Việt | [lxmanga.blog](https://lxmanga.blog/) | v1 |
 | 10 | HentaiVN | Comic | Tiếng Việt | [hentaihvn.tv](https://hentaihvn.tv) | v1 |
+| 11 | truyencom | Novel | Tiếng Việt | [truyencom.com](https://truyencom.com/) | v1 |
 
-**Tổng cộng:** 10 extensions
 
 ## Link extension
 

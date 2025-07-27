@@ -1,0 +1,18 @@
+{
+    "metadata": {
+      "name": "Truyện Com",
+      "author": "longvuu",
+      "version": 1,
+      "source": "https://truyencom.com/",
+      "regexp": "^https?://(www\\.)?truyencom\\.com/",
+      "description": "Truyện Com là trang web đọc truyện chữ online miễn phí.",
+      "locale": "vi_VN",
+      "type": "novel"
+    },
+    "script": {
+      "home": "home.js",
+      "detail": "detail.js",
+      "toc": "toc.js",
+      "chap": "chap.js"
+    }
+  }
