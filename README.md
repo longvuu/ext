@@ -33,3 +33,4 @@ https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
 ```
 https://raw.githubusercontent.com/longvuu/ext/refs/heads/master/plugin.json
 ```
+
