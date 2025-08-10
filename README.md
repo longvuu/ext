@@ -19,7 +19,7 @@ Tải app tại : [Vbook App Download](https://bit.ly/vbookapp)
 | 8 | AliceSW | Novel | Tiếng Trung | [alicesw.com](https://www.alicesw.com/) | v1 |
 | 10 | HentaiVN | Comic | Tiếng Việt | [hentaihvn.tv](https://hentaihvn.tv) | v1 |
 | 11 | truyencom | Novel | Tiếng Việt | [truyencom.com](https://truyencom.com/) | v1 |
-| 12 | truyencn | Novel | Tiếng Việt | [truyencn.com](https://truyencn.com/) | v1 |
+| 12 | wfxs.tw | Novel | Tiếng Trung | [wfxs.tw](https://www.wfxs.tw) | v1 |
 
 ## Link extension
 

@@ -125,17 +125,6 @@
       "locale": "vi_VN",
       "type": "novel"
     },
-    {
-      "name": "truyencn",
-      "author": "longvuu",
-      "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/truyencn/plugin.zip",
-      "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/truyencn/icon.png",
-      "version": 1,
-      "source": "https://truyencn.com/",
-      "description": "trang web đọc truyện chữ online.",
-      "locale": "vi_VN",
-      "type": "novel"
-    },
   {
     "name": "wfxs.tw",
     "author": "longvuu",
