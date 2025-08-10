@@ -2,7 +2,7 @@
     "metadata": {
       "name": "wfxs.tw",
       "author": "longvuu",
-      "version": 3,
+      "version": 4,
       "source": "https://www.wfxs.tw/",
       "regexp": "^https?://(www\\.)?wfxs\\.tw/",
       "description": "trang web đọc truyện chữ online.",
