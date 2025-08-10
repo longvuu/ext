@@ -1,8 +1,8 @@
 {
     "metadata": {
-      "name": "Mê Truyện Chữ",
+      "name": "truyencn",
       "author": "longvuu",
-      "version": 20,
+      "version": 1,
       "source": "https://truyencn.com/",
       "regexp": "^https?://(www\\.)?truyencn\\.com/",
       "description": "trang web đọc truyện chữ online.",
