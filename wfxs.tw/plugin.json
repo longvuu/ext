@@ -1,0 +1,19 @@
+{
+    "metadata": {
+      "name": "wfxs.tw",
+      "author": "longvuu",
+      "version": 1,
+      "source": "https://www.wfxs.tw/",
+      "regexp": "^https?://(www\\.)?wfxs\\.tw/",
+      "description": "trang web đọc truyện chữ online.",
+      "locale": "zh_CN",
+      "type": "chinese_novel"
+    },
+    "script": {
+      "home": "home.js",
+      "detail": "detail.js",
+      "toc": "toc.js",
+      "chap": "chap.js",
+      "search": "search.js"
+    }
+}
