@@ -20,6 +20,7 @@ Tải app tại : [Vbook App Download](https://bit.ly/vbookapp)
 | 10 | HentaiVN | Comic | Tiếng Việt | [hentaihvn.tv](https://hentaihvn.tv) | v1 |
 | 11 | truyencom | Novel | Tiếng Việt | [truyencom.com](https://truyencom.com/) | v1 |
 | 12 | wfxs.tw | Novel | Tiếng Trung | [wfxs.tw](https://www.wfxs.tw) | v1 |
+| 13 | shuqi.com | Novel | Tiếng Trung | [shuqi.com](https://shuqi.com/) | v1 |
 
 ## Link extension
 

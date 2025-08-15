@@ -135,6 +135,17 @@
     "description": "Đọc truyện trên wfxs.tw",
     "locale": "zh_CN",
     "type": "chinese_novel"
+  },
+  {
+    "name": "shuqi.com",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/shuqi.com/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/shuqi.com/icon.png",
+    "version": 1,
+    "source": "https://www.shuqi.com/",
+    "description": "Đọc truyện trên shuqi.com",
+    "locale": "zh_CN",
+    "type": "chinese_novel"
   }
   ]
 }

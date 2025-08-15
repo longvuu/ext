@@ -1,0 +1,19 @@
+{
+    "metadata": {
+      "name": "shuqi.com",
+      "author": "longvuu",
+      "version": 1,
+      "source": "https://shuqi.com/",
+      "regexp": "^https?://(www\\.)?shuqi\\.com/",
+      "description": "trang web đọc truyện chữ online.",
+      "locale": "zh_CN",
+      "type": "chinese_novel"
+    },
+    "script": {
+      "home": "home.js",
+      "detail": "detail.js",
+      "toc": "toc.js",
+      "chap": "chap.js",
+      "search": "search.js"
+    }
+}
