@@ -21,6 +21,7 @@ Tải app tại : [Vbook App Download](https://bit.ly/vbookapp)
 | 11 | truyencom | Novel | Tiếng Việt | [truyencom.com](https://truyencom.com/) | v1 |
 | 12 | wfxs.tw | Novel | Tiếng Trung | [wfxs.tw](https://www.wfxs.tw) | v1 |
 | 13 | shuqi.com | Novel | Tiếng Trung | [shuqi.com](https://shuqi.com/) | v1 |
+| 13 | lxmanga | Comic | Tiếng Việt | [lxmanga](https://lxmanga.my) | v1 |
 
 ## Link extension
 
