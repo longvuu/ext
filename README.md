@@ -22,6 +22,7 @@ Tải app tại : [Vbook App Download](https://bit.ly/vbookapp)
 | 12 | wfxs.tw | Novel | Tiếng Trung | [wfxs.tw](https://www.wfxs.tw) | v1 |
 | 13 | shuqi.com | Novel | Tiếng Trung | [shuqi.com](https://shuqi.com/) | v1 |
 | 13 | lxmanga | Comic | Tiếng Việt | [lxmanga](https://lxmanga.my) | v1 |
+| 14 | webtruyendich | Novel | Tiếng Việt | [webtruyendich.com](https://webtruyendich.com) | v1 |
 
 ## Link extension
 
