@@ -2,7 +2,7 @@
     "metadata": {
       "name": "webtruyendich",
       "author": "longvuu",
-      "version": 1,
+      "version": 2,
       "source": "https://webtruyendich.com/",
       "regexp": "^https?://(www\\.)?webtruyendich\\.com/",
       "description": "trang web đọc truyện chữ online.",
