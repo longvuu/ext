@@ -146,6 +146,17 @@
     "description": "Đọc truyện trên shuqi.com",
     "locale": "zh_CN",
     "type": "chinese_novel"
+  },
+  {
+    "name": "webtruyendich",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/webtruyendich/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/webtruyendich/icon.png",
+    "version": 1,
+    "source": "https://webtruyendich.com/",
+    "description": "Đọc truyện trên webtruyendich.com",
+    "locale": "vi_VN",
+    "type": "novel"
   }
   ]
 }
