@@ -1,4 +1,5 @@
 {
-  "appIP": "http://192.168.0.100:8080",
-  "toc.js": "https://webtruyendich.com/truyen/tu-bao-tien-bon"
+  "appIP": "http://192.168.1.100:8080",
+  "toc.js": "https://webtruyendich.com/truyen/tu-bao-tien-bon",
+  "chap.js": "https://webtruyendich.com/truyen/trung-sinh-xe-bo-ve-thanh-khien-tan-tat-si-quan-sap-dien/fanqie/chuong-1-trung-sinh"
 }
