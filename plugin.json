@@ -157,6 +157,17 @@
     "description": "Đọc truyện trên webtruyendich.com",
     "locale": "vi_VN",
     "type": "novel"
+  },
+  {
+    "name": "mh18",
+    "author": "longvuu",
+    "path":"https://raw.githubusercontent.com/longvuu/vbook-extensions/master/18mh/plugin.zip",
+    "icon":"https://raw.githubusercontent.com/longvuu/vbook-extensions/master/18mh/icon.png",
+    "version":1,
+    "source": "https://18mh.net",
+    "description":"trang truyện seggg.",
+    "locale":"zh_CN",
+    "type":"chinese_novel"
   }
   ]
 }
