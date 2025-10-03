@@ -164,7 +164,7 @@
     "path":"https://raw.githubusercontent.com/longvuu/vbook-extensions/master/18mh/plugin.zip",
     "icon":"https://raw.githubusercontent.com/longvuu/vbook-extensions/master/18mh/icon.png",
     "version":1,
-    "source": "https://18mh.net",
+    "source": "https://18mh.net/novel",
     "description":"trang truyện seggg.",
     "locale":"zh_CN",
     "type":"chinese_novel"
