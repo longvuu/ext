@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "goctruyentranhvui17",
+    "author": "longvuu",
+    "version": 1,
+    "source": "https://goctruyentranhvui17.com/truyen/",
+    "regexp": "^https?://goctruyentranhvui17\\.com/truyen/[^/]+/?$",
+    "description": "Đọc truyện trên trang goctruyentranhvui17.com",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "search": "search.js",
+    "chap": "chap.js"
+  }
+}

@@ -168,6 +168,16 @@
     "description":"trang truyện seggg.",
     "locale":"zh_CN",
     "type":"chinese_novel"
+  },
+  {
+    "author":"longvuu",
+    "path":"https://raw.githubusercontent.com/longvuu/vbook-extensions/master/goctruyentranhvui17/plugin.zip",
+    "icon":"https://raw.githubusercontent.com/longvuu/vbook-extensions/master/goctruyentranhvui17/icon.png",
+    "version":1,
+    "source":"https://goctruyentranhvui17.com/",
+    "description":"Đọc truyện trên góc truyện tranh vui 17",
+    "locale":"vi_VN",
+    "type":"comic"
   }
   ]
 }
