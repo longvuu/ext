@@ -1,0 +1,21 @@
+{
+    "metadata": {
+      "name": "vihentai",
+      "author": "longvuu",
+      "version": 1,
+      "source": "https://vi-hentai.pro/",
+      "regexp": "^https?://(www\\.)?vi-hentai\\.pro/truyen(?:/[^/]+)?/?$",
+      "description": "Đọc truyện trên trang vi-hentai.pro (NSFW)",
+      "locale": "vi_VN",
+      "type": "comic",
+      "tag": "nsfw"
+    },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

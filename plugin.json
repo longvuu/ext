@@ -178,6 +178,16 @@
     "description":"Đọc truyện trên góc truyện tranh vui 17",
     "locale":"vi_VN",
     "type":"comic"
+  },{
+    "name": "vihentai",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/vihentai/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/vihentai/icon.png",
+    "version": 1,
+    "source": "https://vi-hentai.pro/",
+    "description": "Đọc truyện trên vi-hentai.pro (NSFW)",
+    "locale": "vi_VN",
+    "type": "comic"
   }
   ]
 }
