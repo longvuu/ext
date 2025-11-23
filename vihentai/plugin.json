@@ -2,7 +2,7 @@
     "metadata": {
       "name": "vihentai",
       "author": "longvuu",
-      "version": 1,
+      "version": 2,
       "source": "https://vi-hentai.pro/",
       "regexp": "^https?://(www\\.)?vi-hentai\\.pro/truyen(?:/[^/]+)?/?$",
       "description": "Đọc truyện trên trang vi-hentai.pro (NSFW)",
