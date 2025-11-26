@@ -2,7 +2,7 @@
   "metadata": {
     "name": "HentaiVN",
     "author": "longvuu",
-    "version": 1,
+    "version": 2,
     "source": "https://www.hentaivnx.com",
     "regexp": "(www.)?hentaivnx.com/\\d+-[^/]+.html$",
     "description": "Đọc truyện trên trang HentaiVN",
