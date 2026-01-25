@@ -1,0 +1,18 @@
+{
+    "metadata": {
+      "name": "webnovelvn",
+      "author": "longvuu",
+      "version": 1,
+      "source": "https://webnovelvn.com/",
+      "regexp": "^https?://(www\\.)?webnovelvn\\.com/",
+      "description": "webnovelvn.com - Đọc truyện chữ, cập nhật nhanh.",
+      "locale": "vi_VN",
+      "type": "novel"
+    },
+    "script": {
+      "home": "home.js",
+      "detail": "detail.js",
+      "toc": "toc.js",
+      "chap": "chap.js"
+    }
+  }
