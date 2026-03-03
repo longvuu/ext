@@ -188,6 +188,16 @@
     "description": "Đọc truyện trên vi-hentai.pro (NSFW)",
     "locale": "vi_VN",
     "type": "comic"
+  },{
+    "name": "mimihentai",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/mimihentai/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/mimihentai/icon.png",
+    "version": 1,
+    "source": "https://mimihentai.com",
+    "description": "Đọc truyện trên mimihentai.com (NSFW)",
+    "locale": "vi_VN",
+    "type": "comic"
   }
   ]
 }
