@@ -198,6 +198,16 @@
     "description": "Đọc truyện trên mimihentai.com (NSFW)",
     "locale": "vi_VN",
     "type": "comic"
+  },{
+    "name": "vinahentai",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/vinahentai/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/vinahentai/icon.png",
+    "version": 1,
+    "source": "https://vinahentai.net",
+    "description": "Đọc truyện trên vinahentai.net (NSFW)",
+    "locale": "vi_VN",
+    "type": "comic"
   }
   ]
 }
