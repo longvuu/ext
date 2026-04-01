@@ -208,6 +208,16 @@
     "description": "Đọc truyện trên vinahentai.net (NSFW)",
     "locale": "vi_VN",
     "type": "comic"
+  },{
+    "name": "truyenhay24h",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/truyenhay24h/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/truyenhay24h/icon.png",
+    "version": 1,
+    "source": "https://truyenhay24h.net/",
+    "description": "Đọc truyện tranh trên truyenhay24h.net",
+    "locale": "vi_VN",
+    "type": "comic"
   }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "name": "truyenhay24h",
+    "author": "longvuu",
+    "version": 1,
+    "source": "https://truyenhay24h.net/",
+    "regexp": "^https?://(www\\.)?truyenhay24h\\.net/truyen/[^/]+/?$",
+    "description": "Đọc truyện tranh trên truyenhay24h.net",
+    "locale": "vi_VN",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
