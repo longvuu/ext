@@ -218,6 +218,16 @@
     "description": "Đọc truyện tranh trên truyenhay24h.net",
     "locale": "vi_VN",
     "type": "comic"
+  },{
+    "name": "truyentuoitho",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/truyentuoitho/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/truyentuoitho/icon.png",
+    "version": 1,
+    "source": "https://truyentuoitho.com/",
+    "description": "Đọc truyện tranh trên truyentuoitho.com",
+    "locale": "vi_VN",
+    "type": "comic"
   }
   ]
 }

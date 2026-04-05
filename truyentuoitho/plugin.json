@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "name": "truyentuoitho",
+    "author": "longvuu",
+    "version": 1,
+    "source": "https://truyentuoitho.com/",
+    "regexp": "^https?://(www\\.)?truyentuoitho\\.com/manga/[^/]+/?$",
+    "description": "Đọc truyện tranh trên truyentuoitho.com",
+    "locale": "vi_VN",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
