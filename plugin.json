@@ -228,6 +228,16 @@
     "description": "Đọc truyện tranh trên truyentuoitho.com",
     "locale": "vi_VN",
     "type": "comic"
+  },{
+    "name": "nettruyen",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/nettruyen/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/nettruyen/icon.png",
+    "version": 1,
+    "source": "https://nettruyen.org.uk",
+    "description": "Đọc truyện trên trang Nettruyen",
+    "locale": "vi_VN",
+    "type": "comic" 
   }
   ]
 }

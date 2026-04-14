@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "Nettruyen Unofficial",
+    "author": "longvuu",
+    "version": 1,
+    "source": "https://nettruyen.org.uk",
+    "regexp": "(https?:\\/\\/)?(www\\.)?nettruyen(\\.org\\.uk|[0-9a-z-]+).*?\\/(manga|truyen-tranh)\\/[0-9a-z-]+\\/?$",
+    "description": "Đọc truyện trên trang Nettruyen Unofficial",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
