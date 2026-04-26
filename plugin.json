@@ -238,6 +238,16 @@
     "description": "Đọc truyện trên trang Nettruyen",
     "locale": "vi_VN",
     "type": "comic" 
+  },{
+    "name": "tuthienbao",
+    "author": "longvuu",
+    "path": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/tuthienbao/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/longvuu/vbook-extensions/master/tuthienbao/icon.png",
+    "version": 1,
+    "source": "https://tuthienbao.com/forum/",
+    "description": "Đọc truyện tranh trên diễn đàn tuthienbao.com",
+    "locale": "vi_VN",
+    "type": "comic"
   }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "name": "tuthienbao",
+    "author": "longvuu",
+    "version": 1,
+    "source": "http://tuthienbao.com/forum/",
+    "regexp": "^https?://(www\\.)?tuthienbao\\.com/forum/(showthread\\.php\\?t=\\d+.*|forumdisplay\\.php\\?f=\\d+.*)?$",
+    "description": "Đọc truyện tranh trên diễn đàn tuthienbao.com",
+    "locale": "vi_VN",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chao.js"
+  }
+}
